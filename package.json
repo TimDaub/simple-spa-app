@@ -1,0 +1,26 @@
+{
+  "name": "simple-spa-app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir -p dist && browserify -t hyperxify ./src/index.js > dist/bundle.js",
+    "serve": "serve ./dist"
+  },
+  "keywords": [
+    "front",
+    "end",
+    "ehealth"
+  ],
+  "author": "Tim Daubenschütz <tim@daubenschuetz.de> (https://timdaub.github.io)",
+  "devDependencies": {
+    "browserify": "16.5.1",
+    "hyperxify": "2.0.1",
+    "main-loop": "3.4.0",
+    "serve": "11.3.2"
+  },
+  "dependencies": {
+    "virtual-dom": "2.1.1"
+  }
+}
